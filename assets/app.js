@@ -15,12 +15,23 @@ document.addEventListener('DOMContentLoaded',()=>{
     // Auto rotate
     setInterval(()=>{ idx = (idx+1)%slides.length; show(idx)},8000)
   }
-
   // Active nav
   const links = document.querySelectorAll('.nav a')
   links.forEach(l=>{
     if(location.pathname.endsWith(l.getAttribute('href'))|| (location.pathname.endsWith('/') && l.getAttribute('href')==='index.html')){
       l.classList.add('active')
     }
+  })
+
+  // Collapsible panels
+  const toggles = document.querySelectorAll('.panel-toggle')
+  toggles.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const body = btn.nextElementSibling
+      const open = body.style.display === 'block'
+      // close all
+      document.querySelectorAll('.panel-body').forEach(p=>p.style.display='none')
+      if(!open) body.style.display = 'block'
+    })
   })
 })
