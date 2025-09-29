@@ -1,37 +1,39 @@
 /* Shared styles for the AI & FinOps training site */
 :root{
-  --bg:#0f1724;
-  --panel:#0b1220;
-  --accent:#6ee7b7;
-  --muted:#9aa4b2;
-  --glass: rgba(255,255,255,0.04);
+  --bg: #ffffff;
+  --panel: #f5f9ff;
+  --accent: #0b6ef6; /* bright blue */
+  --muted: #5b6b82; /* slate for secondary text */
+  --glass: rgba(11,110,246,0.06);
+  --border: #e6eefb;
 }
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,system-ui,Arial;background:linear-gradient(180deg,#071027 0%, #0f1724 60%);color:#e6eef6}
+html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,system-ui,Arial;background:var(--bg);color:#0f1724}
 .app{display:flex;min-height:100vh}
-.sidebar{width:260px;background:linear-gradient(180deg,#07132a,#081222);padding:24px 16px;border-right:1px solid rgba(255,255,255,0.04);display:flex;flex-direction:column}
+.sidebar{width:260px;background:linear-gradient(180deg,var(--panel),#eef6ff);padding:24px 16px;border-right:1px solid var(--border);display:flex;flex-direction:column}
 .brand{font-weight:700;font-size:18px;color:var(--accent);margin-bottom:12px}
 .nav{display:flex;flex-direction:column;gap:6px}
 .nav a{color:var(--muted);text-decoration:none;padding:10px;border-radius:8px;display:block}
-.nav a.active,.nav a:hover{background:var(--glass);color:#fff}
-.author-card{margin-top:auto;padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);}
-.author-card img{width:48px;height:48px;border-radius:999px;object-fit:cover;border:2px solid rgba(255,255,255,0.06)}
+.nav a.active,.nav a:hover{background:var(--glass);color:var(--accent)}
+.author-card{margin-top:auto;padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(11,110,246,0.03), transparent);}
+.author-card img{width:48px;height:48px;border-radius:999px;object-fit:cover;border:2px solid rgba(11,110,246,0.12)}
 .author-meta{margin-left:10px}
 .author-row{display:flex;align-items:center}
 .content{flex:1;padding:28px}
 .page{max-width:1000px;margin:0 auto}
-.hero{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;display:flex;gap:20px;align-items:center}
-.carousel{position:relative;flex:1;overflow:hidden;border-radius:10px}
-.slide{min-height:180px;padding:20px;display:none}
+.hero{background:linear-gradient(90deg, rgba(11,110,246,0.03), rgba(255,255,255,0.6));padding:20px;border-radius:12px;display:flex;gap:20px;align-items:center;box-shadow:0 4px 14px rgba(12,48,80,0.04)}
+.carousel{position:relative;flex:1;overflow:hidden;border-radius:10px;background:linear-gradient(180deg,#ffffff,#f6fbff);border:1px solid var(--border)}
+.slide{min-height:180px;padding:20px;display:none;color:#0b2a4a}
 .slide.active{display:block}
 .slide h2{margin:0 0 10px}
 .controls{display:flex;gap:8px;margin-top:12px}
-.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);padding:8px 12px;border-radius:8px;cursor:pointer}
+.btn{background:transparent;border:1px solid var(--border);color:var(--accent);padding:8px 12px;border-radius:8px;cursor:pointer}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:10px}
-form{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:10px;max-width:680px}
-label{display:block;margin-top:8px;font-size:13px}
-input[type="text"],input[type="email"],textarea,select{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.card{background:linear-gradient(180deg,#ffffff, #f8fbff);padding:14px;border-radius:10px;border:1px solid var(--border)}
+form{background:transparent;padding:14px;border-radius:10px;max-width:680px}
+label{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
+input[type="text"],input[type="email"],textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:#fff;color:#0b2a4a}
+input::placeholder,textarea::placeholder{color:#98a6bf}
 textarea{min-height:120px}
 .muted{color:var(--muted)}
 footer{margin-top:30px;color:var(--muted);font-size:13px}
