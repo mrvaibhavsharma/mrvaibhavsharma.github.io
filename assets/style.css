@@ -7,10 +7,14 @@
   --glass: rgba(11,110,246,0.06);
   --border: #e6eefb;
 }
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,system-ui,Arial;background:var(--bg);color:#0f1724}
 .app{display:flex;min-height:100vh}
-.sidebar{width:260px;background:linear-gradient(180deg,var(--panel),#eef6ff);padding:24px 16px;border-right:1px solid var(--border);display:flex;flex-direction:column}
+  *{box-sizing:border-box}
+  html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Segoe UI, Roboto, system-ui, Arial;
+      background: linear-gradient(180deg, #ffffff, #eaf4ff);
+      color: #0f1724;
 .brand{font-weight:700;font-size:18px;color:var(--accent);margin-bottom:12px}
 .nav{display:flex;flex-direction:column;gap:6px}
 .nav a{color:var(--muted);text-decoration:none;padding:10px;border-radius:8px;display:block}
@@ -19,10 +23,10 @@ html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,system-ui,Arial;backg
 .author-card img{width:48px;height:48px;border-radius:999px;object-fit:cover;border:2px solid rgba(11,110,246,0.12)}
 .author-meta{margin-left:10px}
 .author-row{display:flex;align-items:center}
-.content{flex:1;padding:28px}
-.page{max-width:1000px;margin:0 auto}
-.hero{background:linear-gradient(90deg, rgba(11,110,246,0.03), rgba(255,255,255,0.6));padding:20px;border-radius:12px;display:flex;gap:20px;align-items:center;box-shadow:0 4px 14px rgba(12,48,80,0.04)}
-.carousel{position:relative;flex:1;overflow:hidden;border-radius:10px;background:linear-gradient(180deg,#ffffff,#f6fbff);border:1px solid var(--border)}
+.content{flex:1;padding:28px;background:linear-gradient(180deg,#ffffff,#eef6ff)}
+.page{max-width:1000px;margin:12px auto}
+.hero{background:linear-gradient(90deg,#ffffff,#eaf4ff);padding:20px;border-radius:12px;display:flex;gap:20px;align-items:center;box-shadow:0 6px 24px rgba(11,78,153,0.06)}
+.carousel{position:relative;flex:1;overflow:hidden;border-radius:10px;background:linear-gradient(180deg,#ffffff,#f0f7ff);border:1px solid var(--border)}
 .slide{min-height:180px;padding:20px;display:none;color:#0b2a4a}
 .slide.active{display:block}
 .slide h2{margin:0 0 10px}
