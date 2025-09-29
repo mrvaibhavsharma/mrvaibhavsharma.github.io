@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FinOps & AI — Welcome to AI world of Learning!</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">Welcome to AI world of Learning!</div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="ai.html">AI Technologies</a>
+          <a href="finops.html">FinOps & AI</a>
+          <a href="about.html">About / Author</a>
+        </nav>
+        <div class="author-card">
+          <div class="author-row">
+            <img src="https://vaibhavsharma.co.in/images/IMG_3843.JPG" alt="Vaibhav">
+            <div class="author-meta">
+              <div style="font-weight:600">Vaibhav Sharma</div>
+              <div style="font-size:12px;color:var(--muted)">Presales | Cloud | FinOps | AI</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="page">
+          <h2>FinOps for AI — Why it matters</h2>
+          <p>AI workloads behave differently from traditional cloud workloads. Model training, inference and storage of embeddings can cause unpredictable spend. FinOps for AI brings cost visibility, allocation, and governance while enabling teams to innovate.</p>
+
+            <h3>Key practices and guidelines</h3>
+            <ul>
+              <li><strong>Cost-aware architecture:</strong> Choose the right compute (GPUs/TPUs vs CPUs), use mixed-precision, model quantization, sharding, and consider managed inference services for predictable spend.</li>
+              <li><strong>Experiment tracking & allocation:</strong> Tag experiments, track run-level costs, and allocate budgets to teams and projects to avoid cost leakage from exploratory workloads.</li>
+              <li><strong>Budgets, alerts & forecasting:</strong> Build cost forecasts based on historical training runs, set automated alerts for spikes and define runbooks for cost incidents.</li>
+              <li><strong>Efficiency & optimization:</strong> Use spot/preemptible instances, batch inference requests, enable caching and inference routing to cheaper models when latency allows.</li>
+              <li><strong>Governance & policy:</strong> Define policies for model retention, artifact lifecycle, and who can launch large training jobs or provision GPU clusters.</li>
+            </ul>
+
+          <section style="margin-top:12px">
+            <h3>FinOps + AI Training Modules</h3>
+            <div class="cards">
+              <div class="card"><h4>Cost Modeling for AI</h4><p class="muted">Estimating training and inference costs.</p></div>
+              <div class="card"><h4>Governance Framework</h4><p class="muted">Policies, budgets and tagging standards.</p></div>
+              <div class="card"><h4>Operational Playbooks</h4><p class="muted">Alerting, anomaly detection and runbooks.</p></div>
+            </div>
+          </section>
+            <h3>Practical modules & labs</h3>
+            <div class="cards">
+              <div class="card">
+                <h4>Cost Modeling for AI (Half-day)</h4>
+                <p class="muted">Build cost estimates for training and inference including data transfer and storage costs.</p>
+                <ul>
+                  <li>Template: cost per epoch, cost per inference</li>
+                  <li>Lab: Estimate cost for a sample training job</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h4>Governance & Tagging (Half-day)</h4>
+                <p class="muted">Implement tagging standards, cost allocation and dashboards.</p>
+                <ul>
+                  <li>Lab: Tagging strategy and building a cost dashboard</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h4>Operational Playbooks (Half-day)</h4>
+                <p class="muted">Create runbooks for cost anomalies, autoscaling policies and incident response.</p>
+                <ul>
+                  <li>Lab: Configure alerts and test a simulated spike</li>
+                </ul>
+              </div>
+            </div>
+
+          <footer>© 2025 — FinOps & AI trainings</footer>
+        </div>
+      </main>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

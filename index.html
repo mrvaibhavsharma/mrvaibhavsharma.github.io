@@ -1,81 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #1f1c2c, #928dab);
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Welcome to AI world of Learning!</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">Welcome to AI world of Learning!</div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="ai.html">AI Technologies</a>
+          <a href="finops.html">FinOps & AI</a>
+          <a href="about.html">About / Author</a>
+        </nav>
 
-    h1 {
-      font-size: 3em;
-      animation: pulse 2s infinite;
-      text-align: center;
-      z-index: 1;
-    }
+        <div class="author-card">
+          <div class="author-row">
+            <img src="https://vaibhavsharma.co.in/images/IMG_3843.JPG" alt="Vaibhav">
+            <div class="author-meta">
+              <div style="font-weight:600">Vaibhav Sharma</div>
+              <div style="font-size:12px;color:var(--muted)">Presales | Cloud | FinOps | AI</div>
+            </div>
+          </div>
+          <div style="margin-top:10px;font-size:13px;color:var(--muted)">Contact: Mrvaibhavsharma@gmail.com</div>
+        </div>
+      </aside>
 
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 0.8;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 0.8;
-      }
-    }
+      <main class="content">
+        <div class="page">
+          <section class="hero">
+            <div style="flex:0 0 180px">
+              <h1 style="margin:0">Welcome</h1>
+              <p style="margin:6px 0;color:var(--muted)">Learn AI & FinOps with practical trainings and clear explanations.</p>
+            </div>
 
-    .stars {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      overflow: hidden;
-      z-index: 0;
-    }
+            <div class="carousel">
+              <div class="slide active">
+                <h2>AI: Latest technologies in industry</h2>
+                <p>Generative AI, LLMs, ML Ops, foundation models, embeddings, vector search, and AutoML are rapidly being adopted across enterprises to automate tasks, extract insights and build intelligent experiences.</p>
+              </div>
 
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: white;
-      animation: twinkle 3s infinite ease-in-out;
-    }
+              <div class="slide">
+                <h2>FinOps for AI — relationship & importance</h2>
+                <p>FinOps for AI focuses on cost governance and operational efficiency for AI workloads. As models scale, FinOps ensures budgets, forecast accuracy, and cost-optimized architecture while enabling AI teams to innovate responsibly.</p>
+              </div>
 
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 1; }
-    }
-  </style>
-</head>
-<body>
-  <div class="stars"></div>
-  <h1>✨ Something good is coming ✨</h1>
-  <script>
-    const starsContainer = document.querySelector('.stars');
-    for (let i = 0; i < 100; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.top = Math.random() * window.innerHeight + 'px';
-      star.style.left = Math.random() * window.innerWidth + 'px';
-      star.style.animationDelay = Math.random() * 3 + 's';
-      starsContainer.appendChild(star);
-    }
-  </script>
-</body>
+              <div class="controls">
+                <button class="btn" id="prev">Prev</button>
+                <button class="btn" id="next">Next</button>
+              </div>
+            </div>
+          </section>
+
+          <section style="margin-top:18px">
+            <h3>Explore Topics</h3>
+            <div class="cards">
+              <div class="card">
+                <h4>Generative AI</h4>
+                <p class="muted">Models, prompts, safety, and use-cases for enterprise adoption.</p>
+              </div>
+              <div class="card">
+                <h4>AI Infrastructure</h4>
+                <p class="muted">Compute, model deployment, monitoring and scaling patterns.</p>
+              </div>
+              <div class="card">
+                <h4>FinOps for Cloud</h4>
+                <p class="muted">Cost allocation, tagging, budgets, and governance approaches.</p>
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            © 2025 — Built for trainings on AI & FinOps
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
 </html>
